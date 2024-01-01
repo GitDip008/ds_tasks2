@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sales Analysis</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Home</a>
+    </nav>
+    <div class="container mt-5">
+        <h2>Sales Analysis</h2>
+        <div class="mt-4">
+            <form action="/answer_question" method="post">
+                <label for="question">Ask a Question:</label><br>
+                <input type="text" id="question" name="question" required><br><br>
+                <button type="submit" class="btn btn-primary">Answer Question</button>
+            </form>
+            <br><br>
+            <form action="/get_gender" method="post">
+                <label for="order_id">Enter Order ID:</label><br>
+                <input type="number" id="order_id" name="order_id" required><br><br>
+                <button type="submit" class="btn btn-primary">Get Gender</button>
+            </form>
+            <br><br>
+            <form action="/get_recommendation" method="post">
+                <label for="month">Enter Month:</label><br>
+                <input type="number" id="month" name="month" required><br><br>
+                <button type="submit" class="btn btn-primary">Get Recommendation</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

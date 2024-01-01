@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Home</a>
+    </nav>
+    <div class="container mt-5">
+        <h2>Result</h2>
+        <div id="result" class="mt-4">
+            <!-- Result content will be displayed here -->
+            {% for key, value in result.items() %}
+                <p>{{ key }}: {{ value }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>
